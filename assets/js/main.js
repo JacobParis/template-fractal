@@ -4,7 +4,12 @@
 	License: pixelarity.com/license
 */
 
-(function($) {
+import jQuery from './jquery.min.js';
+
+import breakpoints from "./breakpoints.min.js";
+import browser from "./browser.min.js";
+
+(function($, breakpoints, browser) {
 
 	var	$window = $(window),
 		$body = $('body');
@@ -47,4 +52,4 @@
 				speed: 1500
 			});
 
-})(jQuery);
+})(jQuery, breakpoints, browser);

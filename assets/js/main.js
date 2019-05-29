@@ -52,4 +52,10 @@ import browser from "./browser.min.js";
 				speed: 1500
 			});
 
+		$('[data-contact]').on('click', () => {
+			$('#three').get(0).scrollIntoView({
+				block: 'start',
+				behavior: 'smooth'
+			});
+		})
 })(jQuery, breakpoints, browser);
